@@ -43,6 +43,32 @@ if (playerDice > cpuDice) {
 //Creo lista di mail
 const mailList = ['lorenzo21neri@gmail.com', 'ermes21@hotmail.it', 'anakin66skywalker@gmail.com', 'martymcfly88@hotmail.it', 'peterparker@gmail.com']
 
+const buttonEl = document.querySelector('button');
+console.log(buttonEl);
+
+const mailForm = document.querySelector('form');
+
+mailForm.addEventListener('submit', function (e) {
+
+    //impedisco refresh pagina
+    e.preventDefault();
+
+    const userCheck = document.querySelector('input').value;
+
+    if (mailList.includes(userCheck)) {
+        console.log('Email corretta');
+
+        mailForm.insertAdjacentHTML('beforeend', '<div>Email corretta</div>');
+
+    } else {
+        console.log('Email errata');
+
+        mailForm.insertAdjacentHTML('beforeend', '<div>Email errata</div>');
+    };
+
+})
+
+
 //Chiedere l'email utente
 /* const userMail = prompt('Ciao, per favore, inserisci il tuo indirizzo email') */
 
