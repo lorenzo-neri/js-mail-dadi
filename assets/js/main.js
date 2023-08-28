@@ -24,3 +24,28 @@ if(playerDice > cpuDice){
 } else {
     console.log('Hai perso!');
 }
+
+
+//MAIL
+//Creo lista di mail
+const mailList = ['lorenzo21neri@gmail.com', 'ermes21@hotmail.it', 'anakin66skywalker@gmail.com', 'martymcfly88@hotmail.it', 'peterparker@gmail.com']
+//Chiedere l'email utente
+const userMail = prompt('Ciao, per favore, inserisci il tuo indirizzo email')
+//Controllare che sia in lista
+for (let i = 0; i  < mailList.length; i++) {
+
+    const mail = mailList[i];
+
+    //console.log(mailList);
+    
+    //console.log(mailList[i]);
+
+    if (userMail === mail) {
+        console.log('Email corretta');
+        
+    }else{
+        console.log('Email errata');
+    }
+
+}
+//Stampare un messaggio appropriato sull’esito del controllo
