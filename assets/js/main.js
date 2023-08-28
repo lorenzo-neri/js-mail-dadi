@@ -6,7 +6,7 @@ Prima di partire a scrivere codice poniamoci qualche domanda: Che ci sia un arra
 - Mail
 Chiedi all'utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 Bonus:
-Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina. */ 
+Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina. */
 
 
 //GIOCO DEI DADI
@@ -17,7 +17,7 @@ console.log(`Dado del giocatore = ${playerDice}`);
 const cpuDice = Math.floor((Math.random() * 6) + 1);
 console.log(`Dado del computer = ${cpuDice}`);
 //Stabilire il vincitore col punteggio più alto
-if(playerDice > cpuDice){
+if (playerDice > cpuDice) {
     console.log('Hai vinto!');
 } else if (playerDice === cpuDice) {
     console.log('Pareggio!');
@@ -32,12 +32,12 @@ const mailList = ['lorenzo21neri@gmail.com', 'ermes21@hotmail.it', 'anakin66skyw
 //Chiedere l'email utente
 const userMail = prompt('Ciao, per favore, inserisci il tuo indirizzo email')
 //Controllare che sia in lista
-for (let i = 0; i  < mailList.length; i++) {
+for (let i = 0; i < mailList.length; i++) {
 
     const mail = mailList[i];
 
     //console.log(mailList);
-    
+
     //console.log(mailList[i]);
 
     let finalResult = 'Email errata'
@@ -45,12 +45,14 @@ for (let i = 0; i  < mailList.length; i++) {
     if (userMail === mail) {
         finalResult = 'Email corretta'
         console.log(finalResult);
-        
-    }else{
+        i = mailList.length;
+
+    } else {
         console.log(finalResult);
     }
 
-    console.log();
+    /* console.log(finalResult); */
 
 }
+
 //Stampare un messaggio appropriato sull’esito del controllo
