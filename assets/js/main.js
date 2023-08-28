@@ -32,7 +32,7 @@ const mailList = ['lorenzo21neri@gmail.com', 'ermes21@hotmail.it', 'anakin66skyw
 //Chiedere l'email utente
 const userMail = prompt('Ciao, per favore, inserisci il tuo indirizzo email')
 //Controllare che sia in lista
-for (let i = 0; i < mailList.length; i++) {
+/* for (let i = 0; i < mailList.length; i++) {  //<--con ciclo, più righe di codice
 
     const mail = mailList[i];
 
@@ -53,6 +53,12 @@ for (let i = 0; i < mailList.length; i++) {
 
     /* console.log(finalResult); */
 
+//} */
+
+if (mailList.includes(userMail)){      //<--senza ciclo, codice più pulito e risultato migliore
+    console.log('Email corretta');
+} else {
+    console.log('Email errata');
 }
 
 //Stampare un messaggio appropriato sull’esito del controllo
