@@ -19,9 +19,9 @@ console.log(`Dado del giocatore = ${playerDice}`);
 const cpuDice = Math.floor((Math.random() * 6) + 1);
 console.log(`Dado del computer = ${cpuDice}`);
 
-const playerResult = document.querySelector('player_dice');
-const cpuResult = document.querySelector('cpu_dice');
-const finalResult = document.querySelector('result');
+const playerResult = document.querySelector('#player_dice');
+const cpuResult = document.querySelector('#cpu_dice');
+const finalResult = document.querySelector('#result');
 
 playerResult.append('Dado del giocatore = ' + playerDice);
 cpuResult.append('Dado del computer = ' + cpuDice);
