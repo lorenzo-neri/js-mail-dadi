@@ -40,12 +40,17 @@ for (let i = 0; i  < mailList.length; i++) {
     
     //console.log(mailList[i]);
 
+    let finalResult = 'Email errata'
+
     if (userMail === mail) {
-        console.log('Email corretta');
+        finalResult = 'Email corretta'
+        console.log(finalResult);
         
     }else{
-        console.log('Email errata');
+        console.log(finalResult);
     }
+
+    console.log();
 
 }
 //Stampare un messaggio appropriato sull’esito del controllo
